@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js')}}"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <form id="add-crypto-form">
+            <div class="input-group">
+                <input class="form-control" type="search" id="new-crypto" placeholder="Search..." requrired>
+                <div class="input-group-append">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Add</button>
+                </div>
+            </div>
+        </form>  
+        <div class="text-white" id="timer">Update in <span id="timer_sec"></span> seconds</div>
+      </nav>
+
+    <div id="cryptos-panel" class="container"></div>
+</body>
+</html>

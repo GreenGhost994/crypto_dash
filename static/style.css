@@ -1,0 +1,85 @@
+.red {
+    color: #856d6d;
+}
+
+.dark-red {
+    color: #931717
+}
+
+.gray {
+    color: #808080;
+}
+
+.green {
+    color: #105810;
+}
+
+.dark-green {
+    color: #637863;
+}
+
+#crypto-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.red-flash {
+    transition: background-color 2s;
+    background-color: #cd9494 ! important;
+    border-radius: 8px;
+}
+
+.green-flash {
+    transition: background-color 2s;
+    background-color: #bbe3bb ! important;
+    border-radius: 8px;
+}
+.gray-flash {
+    transition: background-cotor 2s;
+    background-color: #cfd5e5 ! important;
+    border-radius: 8px;
+}
+
+
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .crypto-tab
+{
+  margin: 10px 10px;
+  transition: 0.5s;
+}
+
+
+.container .crypto-tab .content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #828282;
+  text-align: center;
+}
+
+
+.container .crypto-tab .content h2
+{
+  font-size: 2em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 3px;
+}
